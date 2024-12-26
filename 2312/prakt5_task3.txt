@@ -1,0 +1,12 @@
+@startuml
+start
+:Введите числа A и B (A < B);
+:Set sum = 0;
+:Set i = A;
+while (i <= B)
+    :sum = sum + i * i;
+    :i = i + 1;
+endwhile
+:Вывод: "Сумма квадратов: {sum}";
+stop
+@enduml

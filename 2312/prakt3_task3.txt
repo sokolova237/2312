@@ -1,0 +1,22 @@
+@startuml
+start
+:Введите три числа (A, B, C);
+if (A > B) then (да)
+    if (A < C) then (да)
+        :Среднее число: A;
+    else if (B > C) then (да)
+        :Среднее число: B;
+    else
+        :Среднее число: C;
+    endif
+else
+    if (A > C) then (да)
+        :Среднее число: A;
+    else if (B < C) then (да)
+        :Среднее число: B;
+    else
+        :Среднее число: C;
+    endif
+endif
+stop
+@enduml

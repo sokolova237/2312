@@ -1,0 +1,11 @@
+@startuml
+start
+:Введите число N (> 0);
+:Set N = N;
+while (N > 0)
+    :Цифра = N % 10;
+    :Вывод: Цифра;
+    :N = N / 10;
+endwhile
+stop
+@enduml

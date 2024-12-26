@@ -1,0 +1,15 @@
+@startuml
+start
+:Set total_sum = 0;
+repeat
+    :Введите число (num);
+    if (num == 0) then (да)
+        :Вывод: "Сумма: {total_sum}";
+        stop
+    else (нет)
+        if (num % 7 == 0 and num % 10 == 2) then (да)
+            :total_sum = total_sum + num;
+        endif
+    endif
+repeat while (true)
+@enduml

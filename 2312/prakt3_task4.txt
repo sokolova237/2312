@@ -1,0 +1,15 @@
+@startuml
+start
+:Введите x и k;
+if (k == 3) then (да)
+    :y = sin(x) + 2;
+elseif (k == 20) then (да)
+    :y = cos(x)^2;
+elseif (k == 10 or k == 15) then (да)
+    :y = tan(x) + sin(x);
+else (нет)
+    :y не определено;
+endif
+:Вывести y;
+stop
+@enduml
